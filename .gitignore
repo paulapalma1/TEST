@@ -1,0 +1,28 @@
+# Entorno virtual
+env/
+venv/
+backend-productos/env/
+
+# Archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Archivos de base de datos de Django
+*.sqlite3
+db.sqlite3
+
+# Configuración local de VSCode
+.vscode/
+
+# Node.js (frontend)
+node_modules/
+dist/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
