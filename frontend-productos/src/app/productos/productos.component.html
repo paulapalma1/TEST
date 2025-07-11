@@ -1,0 +1,16 @@
+<div class="container mt-4">
+<h2>LISTA DE PRODUCTOS</h2>
+<div style="height: 30px;"></div>
+
+<div *ngIf="error" style="color: red">{{ error }}</div>
+<ul class="list-group">
+  <li *ngFor="let producto of productos" class="list-group-item d-flex align-items-center gap-3">
+    <img [src]="producto.imagen" alt="{{producto.nombre}}" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
+     <div>
+        <h5>{{ producto.nombre }}</h5>
+        <p class="mb-1">Fecha: {{ producto.fecha }}</p>
+        <p class="mb-0">Valor: ${{ producto.valor }}</p>
+      </div>
+  </li>
+</ul>
+</div>
